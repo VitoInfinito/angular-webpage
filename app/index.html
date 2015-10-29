@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/menu.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="bower_components/lodash/lodash.js"></script>
 </head>
 <body>
   <div ng-include="'partials/menu/menu.html'"></div>
@@ -31,11 +32,21 @@
   -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+
+  <script src="dependencies/utils.js"></script>
+  <script src="dependencies/_.js"></script>
+
+
   <script src="app.js"></script>
+  <script src="partials/partials.js"></script>
   <script src="partials/view2/view2.js"></script>
   <script src="partials/home/home.js"></script>
   <script src="partials/menu/menu.js"></script>
   <script src="partials/niclas/niclas.js"></script>
+
+  <script src="services/services.js"></script>
+  <script src="services/niclas-service.js"></script>
+
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>

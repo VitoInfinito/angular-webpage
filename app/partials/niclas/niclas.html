@@ -1,7 +1,17 @@
 <p>Är du nöjd nu Niclas?</p>
 
-<form>
-	<input type="radio" name="vehicle" value="Bike"> Approved<br>
-	<input type="radio" name="vehicle" value="Car" checked> Approve more<br>
-	<input type="submit" value="Submit">
-</form> 
+<form name="niclasForm">
+  <label>
+    <input type="radio" ng-model="approve" value="simple">
+    Approve
+  </label><br/>
+  <label>
+    <input type="radio" ng-model="approve" value="more">
+    Approved more
+  </label><br/>
+  <input type="submit" ng-click="update()" value="Save" />
+</form>
+
+
+<p>Approve has been chosen {{approveList.simple}} times</p>
+<p>Approved more has been chosen {{approveList.more}} times</p>
