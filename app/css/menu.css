@@ -1,0 +1,35 @@
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #585858;
+  font-size: 1.5em;
+}
+
+.menu > li {
+  display: inline-block;
+}
+
+.menu > li > a {
+  display: block;
+  padding: 0.3em 0.7em;
+  text-decoration: none;
+  color: #F8F8F8;
+}
+
+.menu > li:hover {
+  background-color: #F8F8F8;
+}
+
+.menu > li:hover > a{
+  color: #585858;
+}
+
+.menu > li:before {
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
